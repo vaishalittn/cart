@@ -3,36 +3,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
     padding: 10px;
     text-align: center;
     background-color: #282c34;
     color: white;
 }
+
 .wrapper{
     font-family: 'Georgia';
     font-size: x-large;
 }
+
 .content{
      display: flex;
      border-radius:3%;
  }
+
 .list{
     list-style-type: none;
     background-color: aliceblue;
     text-align: center;
     border-radius:3%;
 }
+
 img{
     border-radius:3%;
 }
+
 .mart-container {
     display: flex;
 }
+
 .left-container, .right-container{
     width: 50%;
     text-align: center;
     }
+
 .product-row, .cart-row{
     display: flex;
     flex-wrap: wrap;
@@ -40,9 +48,11 @@ img{
     align-items: flex-start;
     font-size: medium;
 }
+
 .dividor{
     border-right: 1px solid black;
 }
+
 .order-summary{
     margin: 5px;
 }

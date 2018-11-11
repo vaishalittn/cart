@@ -11,14 +11,17 @@ class Home extends React.Component{
     console.log('data---', data)
      this.props.addToCart(data);
     }
+
     incCartQty = item => {
         console.log('data---', item)
          this.props.incCartQty(item);
      } 
-    decCartQty = item => {
+
+     decCartQty = item => {
         console.log('data---', item)
          this.props.decCartQty(item);
      } 
+
      delete = item => {
         console.log('data---', item)
          this.props.delete(item);
