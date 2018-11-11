@@ -14,8 +14,7 @@ const reducer = (state = initialState, action) => {
                 let quantity = 1;
                 let totalPrice = price;
 
-                //if the user clicks on the same item then increment the quantity
-                //of the same item , otherwise 
+                //if the user clicks add to cart two times then increase the quantity otherwise don't disturb
                 let sameItem = cartItems.filter(item => (id === item.id));
                 if (sameItem.length) {
 
@@ -31,8 +30,7 @@ const reducer = (state = initialState, action) => {
                     });
                 }
 
-                else {     //  the case when user has clicked on a different item
-                    // let avQuantity = availableQty - 1;
+                else {     //different item
                     cartItems = cartItems.concat([{ id, name, quantity, price, image, availableQty: --availableQty, totalPrice }]);
                 }
                 return {
