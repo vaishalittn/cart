@@ -4,8 +4,10 @@ import Home from './home'
 class App extends Component {
     render() {
         return (
-            <div>ttn cart
-            <Home /></div>
+            <div className="wrapper">
+                <header>TTN SHOPPING CART</header>
+            <Home />
+            </div>
         );
     }
 }

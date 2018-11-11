@@ -30,21 +30,21 @@ const PRODUCTS = {
       }, 
       {
         "id": "b1c8740c-4b65-46f0-96f8-4bc2e70faa18",
-        "name": "Shrimp - 16 - 20 Cooked, Peeled",
+        "name": "Shrimp Cooked, Peeled",
         "quantity": 31,
         "image": "https://picsum.photos/200/200/?image=2",
         "price": 293
       }, 
       {
         "id": "52f812f3-9e75-4ba0-9101-6330249875cc",
-        "name": "Lemonade - Strawberry, 591 Ml",
+        "name": "Lemonade - Strawberry",
         "quantity": 24,
         "image": "https://picsum.photos/200/200/?image=20",
         "price": 77
       }, 
       {
         "id": "6f31ca47-eb3e-4a4d-8ef0-3307d2c0e558",
-        "name": "Chicken - White Meat With Tender",
+        "name": "Chicken - White Meat",
         "quantity": 22,
         "image": "https://picsum.photos/200/200/?image=16",
         "price": 180
@@ -72,7 +72,7 @@ const PRODUCTS = {
       }, 
       {
         "id": "e9ac8bab-97a2-41b8-8f40-5f426c2ad536",
-        "name": "Muffin Mix - Morning Glory",
+        "name": "Muffin - Morning Glory",
         "quantity": 39,
         "image": "https://picsum.photos/200/200/?image=14",
         "price": 290
@@ -86,14 +86,14 @@ const PRODUCTS = {
       }, 
       {
         "id": "6226367c-c8be-4f93-a22f-d207a6fc4668",
-        "name": "Wine - Trimbach Pinot Blanc",
+        "name": "Wine - Trimbach Pinot",
         "quantity": 36,
         "image": "https://picsum.photos/200/200/?image=14",
         "price": 64
       }, 
       {
         "id": "4f0352f4-6998-44ec-85e0-9c4b84f4cd80",
-        "name": "Crab - Back Fin Meat, Canned",
+        "name": "Crab - Back Fin Meat",
         "quantity": 20,
         "image": "https://picsum.photos/200/200/?image=15",
         "price": 25
@@ -142,7 +142,7 @@ const PRODUCTS = {
       }, 
       {
         "id": "9c86799e-3554-4673-abf3-6c7115444a2f",
-        "name": "Tomato - Peeled Italian Canned",
+        "name": "Tomato - Italian Canned",
         "quantity": 23,
         "image": "https://picsum.photos/200/200/?image=12",
         "price": 68
