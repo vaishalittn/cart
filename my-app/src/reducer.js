@@ -4,6 +4,6 @@ import { combineReducers } from 'redux'
 
 const reducers = combineReducers({
     cart:cartReducer,
-    product: productsReducer
+    product: productsReducer,
   });
   export default reducers;

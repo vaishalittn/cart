@@ -63,7 +63,7 @@ class Home extends React.Component{
                                     <li>
                                         {item.name}
                                     </li>
-                                    <li>Price:{item.price}</li>
+                                    <li>Price: {item.price}</li>
                                     <li> {item.quantity}
                                     <ButtonToolbar>
                                     <Button disabled={item.availableQty === 0}
@@ -100,8 +100,9 @@ class Home extends React.Component{
                     </div>
                     <div className="dividor"></div>
                     <div className="right-container">
+                        YOUR CART<br />
+                        Total ({cartlist.length} items): {totalAmount} Rs
                      <div className="cart-row">
-                         YOUR CART
                          {cartlist}</div>
                     <div className="order-summary">
                         {`${this.props.cartlist}`.length ? (
