@@ -58,7 +58,7 @@ class Home extends React.Component{
                             <div className="content" key={item.id}>
                             <ul className="list">
                                 <li>
-                                    <img src={item.image} alt="badluck"/>
+                                    <img src={item.image} alt={item.name}/>
                                 </li>
                                     <li>
                                         {item.name}
