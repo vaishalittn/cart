@@ -14,7 +14,7 @@ const reducer = (state = initialState, action) => {
                 let quantity = 1;
                 let totalPrice = price;
 
-                //if the user clicks add to cart two times then increase the quantity otherwise don't disturb
+                //if the user clicks add to cart two times then increase the quantity
                 let sameItem = cartItems.filter(item => (id === item.id));
                 if (sameItem.length) {
 

@@ -67,11 +67,11 @@ class Home extends React.Component{
                                     <li> {item.quantity}
                                     <ButtonToolbar>
                                     <Button disabled={item.availableQty === 0}
-                                     onClick={() => {this.props.incCartQty(item)}}
+                                     onClick={() => {this.props.incCartQty(item)}} bsStyle="primary"
                                      className="incCartItemBtn" block>+</Button>
-                                    <Button onClick={() => {this.props.decCartQty(item)}}
+                                    <Button onClick={() => {this.props.decCartQty(item)}} bsStyle="warning"
                                      className="removeFromCartBtn" block>-</Button>
-                                    <Button onClick={() => {this.props.delete(item)}} bsSize="small" bsStyle="warning"
+                                    <Button onClick={() => {this.props.delete(item)}} bsSize="small" bsStyle="danger"
                                      className="deleteFromCartButton" block>Delete</Button>
                                     </ButtonToolbar></li>
                                 </ul>
@@ -101,7 +101,7 @@ class Home extends React.Component{
                     <div className="dividor"></div>
                     <div className="right-container">
                         YOUR CART<br />
-                        Total ({cartlist.length} items): {totalAmount} Rs
+                        Total : {totalAmount} Rs
                      <div className="cart-row">
                          {cartlist}</div>
                     <div className="order-summary">
