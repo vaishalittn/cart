@@ -45,7 +45,7 @@ class Home extends React.Component{
                             <p>Rs: {_data.price}</p>
                         </li>
                         <li><ButtonToolbar>
-                        <Button bsStyle="info" bsSize="small" block disabled = {_data.quantity==0}
+                        <Button bsStyle="info" bsSize="small" block disabled = {_data.quantity===0}
                         onClick={()=>{ this.handleAddtoCart(_data)}}>ADD TO CART</Button>
                         </ButtonToolbar></li>
                     </ul>
@@ -68,7 +68,7 @@ class Home extends React.Component{
                                     <ButtonToolbar>
                                     <Button disabled={item.availableQty === 0}
                                      onClick={() => {this.props.incCartQty(item)}} bsStyle="primary"
-                                     className="incCartItemBtn" disabled={item.availableQty == 0} block>+</Button>
+                                     className="incCartItemBtn" disabled={item.availableQty === 0} block>+</Button>
                                     <Button onClick={() => {this.props.decCartQty(item)}} bsStyle="warning"
                                      className="removeFromCartBtn" block>-</Button>
                                     <Button onClick={() => {this.props.delete(item)}} bsSize="small" bsStyle="danger"
@@ -137,4 +137,13 @@ const mapDispatchToProps = dispatch => ({
     decCartQty: bindActionCreators(DEC_CART_QTY, dispatch),
     delete: bindActionCreators(DELETE_FROM_CART, dispatch),
 });
+
+//new way or correct way
+// const mapDispatchToProps = dispatch => bindActionCreators({
+//     addtocart,
+//     INC_CART_QTY,
+//     DEC_CART_QTY,
+//     DELETE_FROM_CART,  
+// },dispatch)
+//then use these from same name
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
